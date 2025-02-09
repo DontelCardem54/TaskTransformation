@@ -4,7 +4,7 @@ public class Sphere : MonoBehaviour
 {
     [SerializeField] private float _speed;
 
-    void Update()
+    private void Update()
     {
         transform.Translate(_speed * Time.deltaTime * Vector3.forward, Space.Self);
     }
